@@ -1,3 +1,6 @@
+/**
+ * 链表
+ */
 public class MyLinkList {
 
     private Node head;

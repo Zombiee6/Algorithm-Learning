@@ -1,3 +1,6 @@
+/**
+ * 数组
+ */
 public class MyArray {
     private int[] array;
     private int size;
