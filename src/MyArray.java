@@ -1,5 +1,7 @@
 /**
  * 数组
+ * @author Billy
+ * @date 2020/3/1 11:32 上午
  */
 public class MyArray {
     private int[] array;
@@ -10,7 +12,7 @@ public class MyArray {
         size = 0;
     }
 
-    public void insert(int element, int index) throws Exception {
+    public void insert(int element, int index) throws RuntimeException {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException("数组越界");
         }

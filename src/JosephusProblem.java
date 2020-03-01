@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 约瑟夫问题
  * @author Billy
  * @date 2020/2/25 4:28 下午
  */
@@ -23,7 +24,7 @@ public class JosephusProblem {
         if(total == 1 && count == 1) {
             throw new RuntimeException("Invalid input");
         }
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         for(int i = 0; i < total; i++) {
             list.add(i);
         }

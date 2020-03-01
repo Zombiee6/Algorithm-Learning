@@ -1,5 +1,7 @@
 /**
  * 循环队列(充分利用数组空间，避免元素整体移动)
+ * @author Billy
+ * @date 2020/3/1 11:32 上午
  */
 public class MyQueue {
     private int[] array;

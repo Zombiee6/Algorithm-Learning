@@ -1,5 +1,7 @@
 /**
  * 链表
+ * @author Billy
+ * @date 2020/3/1 11:32 上午
  */
 public class MyLinkList {
 
@@ -37,7 +39,7 @@ public class MyLinkList {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("out of range");
         }
-        Node removedNode = null;
+        Node removedNode;
         if (index == 0) {
             //head
             removedNode = head;

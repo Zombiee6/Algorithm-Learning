@@ -4,6 +4,7 @@ import java.util.Queue;
 import java.util.Stack;
 
 /**
+ * 二叉树
  * @author Billy
  * @date 2020/2/25 10:28 下午
  */
@@ -22,7 +23,7 @@ public class MyBinaryTree {
      * 构建二叉树
      *
      * @param inputList 输入序列
-     * @return
+     * @return node
      */
     public static TreeNode createBinaryTree(LinkedList<Integer> inputList) {
         TreeNode node = null;
