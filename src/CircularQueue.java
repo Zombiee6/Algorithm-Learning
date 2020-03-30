@@ -3,12 +3,12 @@
  * @author Billy
  * @date 2020/3/1 11:32 上午
  */
-public class MyQueue {
+public class CircularQueue {
     private int[] array;
     private int font;
     private int rear;
 
-    public MyQueue(int capacity) {
+    public CircularQueue(int capacity) {
         this.array = new int[capacity];
     }
 
@@ -36,19 +36,19 @@ public class MyQueue {
     }
 
     public static void main(String[] args) {
-        MyQueue myQueue = new MyQueue(6);
-        myQueue.enqueue(3);
-        myQueue.enqueue(5);
-        myQueue.enqueue(6);
-        myQueue.enqueue(8);
-        myQueue.enqueue(1);
-        myQueue.dequeue();
-        myQueue.dequeue();
-        myQueue.dequeue();
-        myQueue.enqueue(2);
-        myQueue.enqueue(4);
-        myQueue.enqueue(9);
-        myQueue.output();
+        CircularQueue circularQueue = new CircularQueue(6);
+        circularQueue.enqueue(3);
+        circularQueue.enqueue(5);
+        circularQueue.enqueue(6);
+        circularQueue.enqueue(8);
+        circularQueue.enqueue(1);
+        circularQueue.dequeue();
+        circularQueue.dequeue();
+        circularQueue.dequeue();
+        circularQueue.enqueue(2);
+        circularQueue.enqueue(4);
+        circularQueue.enqueue(9);
+        circularQueue.output();
         //8,1,2,4,9
     }
 }

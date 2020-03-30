@@ -3,7 +3,7 @@ package leetcode;
 import java.util.Arrays;
 
 /**
- * Available Captures for Rook
+ * 999. 可以被一步捕获的棋子数
  *
  * @author Billy
  * @date 2020/3/28 1:55 下午
