@@ -73,7 +73,7 @@ public class P2 {
         ListNode curr = dummyHead;
         int carry = 0;
 //        while (l1 != null || l2 != null || carry != 0) {
-        while(!(l1 == null && l2 == null && carry == 0)){
+        while (!(l1 == null && l2 == null && carry == 0)) {
             int val1 = (l1 != null) ? l1.val : 0;
             int val2 = (l2 != null) ? l2.val : 0;
             int sum = val1 + val2 + carry;
@@ -114,21 +114,23 @@ public class P2 {
         ListNode l2 = p2.getListNode(a2);
         System.out.println(p2.addTwoNumbers2(l1, l2));
     }
+
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
+
+        @Override
+        public String toString() {
+            return "ListNode{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
+    }
 }
 
-class ListNode {
-    int val;
-    ListNode next;
 
-    ListNode(int x) {
-        val = x;
-    }
-
-    @Override
-    public String toString() {
-        return "ListNode{" +
-                "val=" + val +
-                ", next=" + next +
-                '}';
-    }
-}
