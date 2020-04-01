@@ -30,10 +30,7 @@ public class P20 {
                 }
             }
         }
-        if (!stack.isEmpty()) {
-            return false;
-        }
-        return true;
+        return stack.isEmpty();
     }
 
     public static void main(String[] args) {
