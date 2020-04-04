@@ -12,7 +12,7 @@ import java.util.Stack;
  */
 public class P20 {
     public static boolean isValid(String str) {
-        Map<Character, Character> map = new HashMap<Character, Character>() {{
+        Map<Character, Character> map = new HashMap<Character, Character>(3) {{
             put(')', '(');
             put(']', '[');
             put('}', '{');
