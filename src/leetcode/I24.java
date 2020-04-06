@@ -50,34 +50,12 @@ public class I24 {
         System.out.println("null");
     }
 
-    public static ListNode getListNode(int[] array) {
-        ListNode head = null;
-        for (int i = array.length - 1; i >= 0; i--) {
-            int val = array[i];
-            ListNode node = new ListNode(val);
-            if (head != null) {
-                node.next = head;
-            }
-            head = node;
-        }
-        return head;
-    }
-
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5};
-        ListNode listNode = getListNode(array);
+        ListNode listNode = ListNode.getListNode(array);
         print(listNode);
 //        print(reverseList(listNode));
         print(reverseListRecursive(listNode));
-    }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 }
 

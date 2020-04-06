@@ -68,7 +68,7 @@ public class P2 {
         return head;
     }
 
-    public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
+    public static ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
         ListNode dummyHead = new ListNode(0);
         ListNode curr = dummyHead;
         int carry = 0;
@@ -90,46 +90,15 @@ public class P2 {
         return dummyHead.next;
     }
 
-    public ListNode getListNode(int[] array) {
-        ListNode head = null;
-        for (int i = array.length - 1; i >= 0; i--) {
-            int val = array[i];
-            ListNode node = new ListNode(val);
-            if (head != null) {
-                node.next = head;
-            }
-            head = node;
-        }
-        return head;
-    }
-
     public static void main(String[] args) {
         int[] a1 = {2, 4, 3};
 //        int[] a1 = {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1};
         int[] a2 = {5, 6, 4};
 //        int[] a1 = {9};
 //        int[] a2 = {1, 9, 9, 9, 9, 9, 9, 9, 9, 9};
-        P2 p2 = new P2();
-        ListNode l1 = p2.getListNode(a1);
-        ListNode l2 = p2.getListNode(a2);
-        System.out.println(p2.addTwoNumbers2(l1, l2));
-    }
-
-    class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-
-        @Override
-        public String toString() {
-            return "ListNode{" +
-                    "val=" + val +
-                    ", next=" + next +
-                    '}';
-        }
+        ListNode l1 = ListNode.getListNode(a1);
+        ListNode l2 = ListNode.getListNode(a2);
+        System.out.println(addTwoNumbers2(l1, l2));
     }
 }
 
