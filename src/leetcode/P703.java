@@ -23,7 +23,7 @@ public class P703 {
 }
 
 /**
- * 时间复杂度(Nlog(k))
+ * 时间复杂度：O(Nlog(k))
  */
 class KthLargest {
     final PriorityQueue<Integer> queue;
