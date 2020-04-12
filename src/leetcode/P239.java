@@ -59,12 +59,12 @@ public class P239 {
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(k, Comparator.reverseOrder());
         int[] output = new int[n - k + 1];
         for (int i = 0; i < n; i++) {
-            if (i + 1 > k) {
+            if (i - k + 1 > 0) {
                 //remove(object)时间复杂度O(k)，remove()时间复杂度为O(logk)
                 maxHeap.remove(nums[i - k]);
             }
             maxHeap.offer(nums[i]);
-            if (i + 1 >= k) {
+            if (i - k + 1 >= 0) {
                 output[i - k + 1] = maxHeap.peek();
             }
         }
