@@ -50,7 +50,7 @@ public class P20 {
      */
     public static boolean isValid2(String s) {
         if (s.contains("()") || s.contains("[]") || s.contains("{}")) {
-            return isValid(s.replace("()", "").replace("[]", "").replace("{}", ""));
+            return isValid2(s.replace("()", "").replace("[]", "").replace("{}", ""));
         } else {
             return "".equals(s);
         }
@@ -62,7 +62,7 @@ public class P20 {
      * @param s
      * @return
      */
-    public boolean isValid3(String s) {
+    public static boolean isValid3(String s) {
         if (s.isEmpty()) {
             return true;
         }
@@ -87,8 +87,8 @@ public class P20 {
      * @param s
      * @return
      */
-    public boolean isValid4(String s) {
-        Stack<Character> stack = new Stack<Character>();
+    public static boolean isValid4(String s) {
+        Stack<Character> stack = new Stack<>();
         for (char c : s.toCharArray()) {
             if (c == '(') {
                 stack.push(')');
@@ -109,5 +109,7 @@ public class P20 {
 //        String str = "([)]";
         System.out.println(isValid(str));
         System.out.println(isValid2(str));
+        System.out.println(isValid3(str));
+        System.out.println(isValid4(str));
     }
 }
