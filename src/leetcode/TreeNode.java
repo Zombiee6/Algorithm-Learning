@@ -15,7 +15,7 @@ public class TreeNode {
         val = x;
     }
 
-    public static TreeNode createBinaryTree(LinkedList<Integer> inputList) {
+    public static TreeNode createBinaryTreePreOrder(LinkedList<Integer> inputList) {
         TreeNode node = null;
         if (inputList == null || inputList.isEmpty()) {
             return null;
@@ -23,8 +23,8 @@ public class TreeNode {
         Integer data = inputList.removeFirst();
         if (data != null) {
             node = new TreeNode(data);
-            node.left = createBinaryTree(inputList);
-            node.right = createBinaryTree(inputList);
+            node.left = createBinaryTreePreOrder(inputList);
+            node.right = createBinaryTreePreOrder(inputList);
         }
         return node;
     }

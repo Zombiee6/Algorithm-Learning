@@ -141,5 +141,7 @@ public class MyBinaryTree {
         postOrderTraversal(treeNode);
         System.out.println("\n非递归前序遍历:");
         preOrderTraversalWithStack(treeNode);
+        System.out.println("\n广度优先遍历：");
+        levelOrderTraversal(treeNode);
     }
 }
