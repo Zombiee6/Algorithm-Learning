@@ -11,7 +11,7 @@ import java.util.Queue;
  * @date 2020/4/28 11:34 下午
  */
 public class P104 {
-    private static int MIN, MAX = 0;
+    private static int MAX = 0;
 
     /**
      * BFS
@@ -47,7 +47,7 @@ public class P104 {
     /**
      * DFS
      * 时间复杂度：O(N)
-     * 空间复杂度：O(N)
+     * 空间复杂度：O(log(N))~O(N)
      *
      * @param root
      * @return
@@ -69,10 +69,29 @@ public class P104 {
         dfs(node.right, level + 1);
     }
 
+    /**
+     * DFS
+     * 时间复杂度：O(N)
+     * 空间复杂度：O(log(N))~O(N)（树完全平衡～树完全不平衡）
+     *
+     * @param root
+     * @return
+     */
+    public static int maxDepth3(TreeNode root) {
+        if (root == null) {
+            return 0;
+        } else {
+            int left_height = maxDepth3(root.left);
+            int right_height = maxDepth3(root.right);
+            return java.lang.Math.max(left_height, right_height) + 1;
+        }
+    }
+
     public static void main(String[] args) {
 //        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{3, 9, null, null, 20, 15, null, null, 7, null, null}));
 //        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{1, 2, null, null}));
-        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{0, null, null}));
+//        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{0, null, null}));
+        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{1, 2, null, null, null}));
         TreeNode root = TreeNode.createBinaryTreePreOrder(inputList);
         System.out.println(maxDepth(root));
         System.out.println(maxDepth2(root));
