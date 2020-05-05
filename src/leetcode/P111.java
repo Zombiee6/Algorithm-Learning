@@ -96,6 +96,19 @@ public class P111 {
         return Math.min(m1, m2) + 1;
     }
 
+    public static int minDepth4(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int left = minDepth4(root.left);
+        int right = minDepth4(root.right);
+        if (left == 0 || right == 0) {
+            return left + right + 1;
+        } else {
+            return Math.min(left, right) + 1;
+        }
+    }
+
     public static void main(String[] args) {
 //        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{3, 9, null, null, 20, 15, null, null, 7, null, null}));
 //        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{1, 2, null, null}));
@@ -105,5 +118,6 @@ public class P111 {
         System.out.println(minDepth(root));
         System.out.println(minDepth2(root));
         System.out.println(minDepth3(root));
+        System.out.println(minDepth4(root));
     }
 }
