@@ -57,7 +57,14 @@ public class P69 {
         return (long) right * right > x ? left : right;
     }
 
-    public static double mySqrt(int x, double acu) {
+    /**
+     * 指定精度
+     *
+     * @param x
+     * @param epsilon
+     * @return
+     */
+    public static double mySqrt(int x, double epsilon) {
         if (x == 0 || x == 1) {
             return x;
         }
@@ -65,13 +72,12 @@ public class P69 {
         while (l <= r) {
             double m = (l + r) / 2;
             //m*m会导致int越位
-            if (m == x / m) {
+            if (Math.abs(m * m - x) < epsilon) {
                 return m;
-            } else if (m > x / m) {
-                r = m - 1;
+            } else if (m * m > x) {
+                r = m;
             } else {
-                l = m + 1;
-                res = m;
+                l = m;
             }
         }
         return res;
@@ -102,5 +108,6 @@ public class P69 {
         System.out.println(mySqrt(8));
         System.out.println(mySqrt2(4));
         System.out.println(mySqrt(2));
+        System.out.println(mySqrt(2, 0.1));
     }
 }
