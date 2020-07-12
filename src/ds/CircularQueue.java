@@ -1,3 +1,5 @@
+package ds;
+
 /**
  * 循环队列(充分利用数组空间，避免元素整体移动)
  * @author Billy

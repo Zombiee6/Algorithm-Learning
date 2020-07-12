@@ -1,3 +1,5 @@
+package ds;
+
 /**
  * 数组
  * @author Billy
