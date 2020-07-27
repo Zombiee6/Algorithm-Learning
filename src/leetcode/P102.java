@@ -72,7 +72,7 @@ public class P102 {
     }
 
     public static void main(String[] args) {
-        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{3, 9, null, null, 20, 15, null, null, 7, null, null}));
+        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(3, 9, null, null, 20, 15, null, null, 7, null, null));
 //        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{1, 2, null, null}));
         TreeNode treeNode = TreeNode.createBinaryTreePreOrder(inputList);
         List<List<Integer>> lists = levelOrder2(treeNode);

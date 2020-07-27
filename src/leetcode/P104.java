@@ -91,7 +91,7 @@ public class P104 {
 //        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{3, 9, null, null, 20, 15, null, null, 7, null, null}));
 //        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{1, 2, null, null}));
 //        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{0, null, null}));
-        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(new Integer[]{1, 2, null, null, null}));
+        LinkedList<Integer> inputList = new LinkedList<>(Arrays.asList(1, 2, null, null, null));
         TreeNode root = TreeNode.createBinaryTreePreOrder(inputList);
         System.out.println(maxDepth(root));
         System.out.println(maxDepth2(root));

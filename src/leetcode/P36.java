@@ -96,7 +96,7 @@ public class P36 {
             for (int j = 0; j < 9; j++) {
                 char num = board[i][j];
                 if (num != '.') {
-                    int n = (int) num;
+                    int n = num;
                     int box_index = (i / 3) * 3 + j / 3;
 
                     // keep the current cell value
