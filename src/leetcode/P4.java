@@ -3,7 +3,7 @@ package leetcode;
 /**
  * 4. 寻找两个正序数组的中位数
  *
- * @author chenjie5
+ * @author Billy
  * @date 2020/8/22 3:28 下午
  */
 public class P4 {

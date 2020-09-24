@@ -3,7 +3,7 @@ package leetcode;
 /**
  * 538. 把二叉搜索树转换为累加树
  *
- * @author chenjie5
+ * @author Billy
  * @date 2020/9/21 10:44 下午
  */
 public class P538 {

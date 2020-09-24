@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 78. 子集
  *
- * @author chenjie5
+ * @author Billy
  * @date 2020/9/20 10:19 上午
  */
 public class P78 {

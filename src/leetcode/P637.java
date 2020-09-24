@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * 637. 二叉树的层平均值
  *
- * @author chenjie5
+ * @author Billy
  * @date 2020/9/12 2:35 下午
  */
 public class P637 {

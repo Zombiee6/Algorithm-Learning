@@ -1,7 +1,7 @@
 package leetcode;
 
 /**
- * @author chenjie5
+ * @author Billy
  * @date 2020/8/30 3:57 下午
  */
 public class P557 {

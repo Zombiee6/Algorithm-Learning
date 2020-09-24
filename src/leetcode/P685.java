@@ -3,7 +3,7 @@ package leetcode;
 /**
  * 685. 冗余连接 II
  *
- * @author chenjie5
+ * @author Billy
  * @date 2020/9/17 10:46 下午
  */
 public class P685 {

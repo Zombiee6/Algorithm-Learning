@@ -7,7 +7,7 @@ import static leetcode.Util.printArray;
 /**
  * 501. 二叉搜索树中的众数
  *
- * @author chenjie5
+ * @author Billy
  * @date 2020/9/24 10:45 下午
  */
 public class P501 {

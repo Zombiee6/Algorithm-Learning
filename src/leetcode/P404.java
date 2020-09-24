@@ -7,7 +7,7 @@ import java.util.Queue;
 /**
  * 404. 左叶子之和
  *
- * @author chenjie5
+ * @author Billy
  * @date 2020/9/19 7:35 下午
  */
 public class P404 {

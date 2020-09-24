@@ -3,7 +3,7 @@ package leetcode;
 /**
  * 226. 翻转二叉树
  *
- * @author chenjie5
+ * @author Billy
  * @date 2020/9/17 10:43 下午
  */
 public class P226 {
