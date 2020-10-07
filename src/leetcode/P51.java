@@ -14,9 +14,6 @@ public class P51 {
     /**
      * 撇和捺分别有2n-1条
      * 正斜线(撇、次对角线)：row+col=常数；反斜线(捺、主对角线)：row-col=常数
-     *
-     * @param n
-     * @return
      */
     public static List<List<String>> solveNQueens(int n) {
         List<List<String>> res = new ArrayList<>();
@@ -28,13 +25,6 @@ public class P51 {
      * DFS回溯
      * 时间复杂度：O(N!).放置第 1 个皇后有 N 种可能的方法，放置两个皇后的方法不超过 N (N - 2) ，放置 3 个皇后的方法不超过 N(N - 2)(N - 4) ，以此类推.
      * 空间复杂度：O(N).需要保存对角线和列的信息
-     *
-     * @param r
-     * @param col
-     * @param slash
-     * @param backlash
-     * @param board
-     * @param res
      */
     public static void dfs(int r, boolean[] col, boolean[] slash, boolean[] backlash, String[] board, List<List<String>> res) {
         //获得可行解法，把解法放入结果中

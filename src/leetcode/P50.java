@@ -37,10 +37,6 @@ public class P50 {
      * 快速幂算法（递归）
      * 时间复杂度：O(log n)
      * 空间复杂度：O(log n)
-     *
-     * @param x
-     * @param n
-     * @return
      */
     public static double Pow2(double x, int n) {
         long N = n;
