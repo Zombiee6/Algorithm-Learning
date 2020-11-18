@@ -48,23 +48,52 @@ public class P75 {
         int p0 = 0, p1 = 0;
         for (int i = 0; i < n; ++i) {
             if (nums[i] == 1) {
-                int temp = nums[i];
-                nums[i] = nums[p1];
-                nums[p1] = temp;
+                swap(nums, i, p1);
                 ++p1;
             } else if (nums[i] == 0) {
-                int temp = nums[i];
-                nums[i] = nums[p0];
-                nums[p0] = temp;
+                swap(nums, i, p0);
                 if (p0 < p1) {
-                    temp = nums[i];
-                    nums[i] = nums[p1];
-                    nums[p1] = temp;
+                    swap(nums, i, p1);
                 }
                 ++p0;
                 ++p1;
             }
         }
+    }
+
+    /**
+     * 使用双指针，一次遍历
+     * [0,p0)==0
+     * [p0,i)==1
+     * (p2,len-1]==2
+     * <p>
+     * 时间复杂度：O(n)
+     * 空间复杂度：O(1)
+     */
+    public static void sortColors3(int[] nums) {
+        int n = nums.length;
+        if (n < 2) {
+            return;
+        }
+        int p0 = 0, i = 0, p2 = n - 1;
+        while (i <= p2) {
+            if (nums[i] == 0) {
+                swap(nums, p0, i);
+                p0++;
+                i++;
+            } else if (nums[i] == 1) {
+                i++;
+            } else {
+                swap(nums, p2, i);
+                p2--;
+            }
+        }
+    }
+
+    private static void swap(int[] nums, int index1, int index2) {
+        int temp = nums[index1];
+        nums[index1] = nums[index2];
+        nums[index2] = temp;
     }
 
     public static void main(String[] args) {
