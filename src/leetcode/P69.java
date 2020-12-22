@@ -106,9 +106,10 @@ public class P69 {
 
     /**
      * 牛顿迭代法求平方根
-     * @param  number   求值的数
-     * @param  accuracy 精度
-     * @return          Double
+     *
+     * @param number   求值的数
+     * @param accuracy 精度
+     * @return Double
      */
     public static double NewtonSqrt(double number, double accuracy) {
         //第一个猜测值

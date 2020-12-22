@@ -1,9 +1,5 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * 52. N皇后 II(返回解法数量)
  *

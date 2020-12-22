@@ -1,7 +1,5 @@
 package leetcode;
 
-import static leetcode.Util.printArray;
-
 /**
  * @author billy
  * @date 2020/10/7 7:29 上午

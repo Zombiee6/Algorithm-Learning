@@ -12,7 +12,6 @@ public class P4 {
      * 利用二分法，每次排除k/2个元素
      * 时间复杂度：O(log(M+N))
      * 空间复杂度：O(1)
-     *
      */
     public static double findMedianSortedArrays2(int[] nums1, int[] nums2) {
         int n = nums1.length;
@@ -43,8 +42,7 @@ public class P4 {
 
         if (nums1[i] > nums2[j]) {
             return getKth(nums1, start1, end1, nums2, j + 1, end2, k - (j - start2 + 1));
-        }
-        else {
+        } else {
             return getKth(nums1, i + 1, end1, nums2, start2, end2, k - (i - start1 + 1));
         }
     }

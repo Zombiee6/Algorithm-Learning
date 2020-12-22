@@ -1,7 +1,5 @@
 package leetcode;
 
-import ds.UnionFind;
-
 import java.util.LinkedList;
 import java.util.Queue;
 

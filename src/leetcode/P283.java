@@ -50,7 +50,8 @@ public class P283 {
         }
     }
 
-    /**最优
+    /**
+     * 最优
      * 对moveZeroes2的优化，避免了数组开头i==j时交换
      * 时间复杂度：O(n)
      * 空间复杂度：O(1)
@@ -59,6 +60,7 @@ public class P283 {
         if (nums == null) {
             return;
         }
+        //j用于记录非0元素个数
         int j = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {

@@ -1,7 +1,5 @@
 package leetcode;
 
-import java.util.Arrays;
-
 /**
  * 999. 可以被一步捕获的棋子数
  *

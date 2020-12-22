@@ -2,8 +2,6 @@ package leetcode;
 
 import java.util.*;
 
-import static leetcode.Util.printArray;
-
 /**
  * 113. 路径总和 II
  *

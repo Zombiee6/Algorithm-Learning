@@ -32,7 +32,8 @@ public class P26 {
         return j;
     }
 
-    /**最优
+    /**
+     * 最优
      * 快、慢指针，不同时交换
      * 时间复杂度：O(n)
      * 空间复杂度：O(1)
@@ -59,8 +60,8 @@ public class P26 {
      */
     public static int removeDuplicates3(int[] nums) {
         int i = 0;
-        for(int n : nums) {
-            if(i < 1 || n > nums[i - 1]) {
+        for (int n : nums) {
+            if (i < 1 || n > nums[i - 1]) {
                 nums[i++] = n;
             }
         }

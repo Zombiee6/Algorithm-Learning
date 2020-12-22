@@ -1,6 +1,9 @@
 package leetcode;
 
-import java.util.*;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
 
 /**
  * 230. 二叉搜索树中第K小的元素
@@ -31,13 +34,13 @@ public class P230 {
 
     public int kthSmallest2(TreeNode root, int k) {
         Deque<TreeNode> deque = new LinkedList<>();
-        while(true) {
+        while (true) {
             while (root != null) {
                 deque.push(root);
                 root = root.left;
             }
             root = deque.pop();
-            if(--k == 0){
+            if (--k == 0) {
                 return root.val;
             }
             root = root.right;

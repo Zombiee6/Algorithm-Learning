@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static leetcode.Util.printArray;
-
 /**
  * 120. 三角形最小路径和
  *
