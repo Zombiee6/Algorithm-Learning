@@ -6,6 +6,8 @@ import java.util.stream.Collectors;
 import static leetcode.Util.printArray;
 
 /**
+ * 387. 字符串中的第一个唯一字符
+ *
  * @author Billy
  * @date 2020/8/6 11:21 下午
  */
@@ -13,10 +15,6 @@ public class P347 {
 
     /**
      * 借助java8的stream api
-     *
-     * @param nums
-     * @param k
-     * @return
      */
     public static int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> keyMap = new HashMap<>(nums.length);
@@ -47,10 +45,6 @@ public class P347 {
      * 最小堆
      * 时间复杂度：O(NlogK)
      * 空间复杂度：O(N)
-     *
-     * @param nums
-     * @param k
-     * @return
      */
     public static List<Integer> topKFrequent2(int[] nums, int k) {
         // 使用字典，统计每个元素出现的次数，元素为键，元素出现的次数为值
@@ -90,10 +84,6 @@ public class P347 {
 
     /**
      * 大顶堆
-     *
-     * @param nums
-     * @param k
-     * @return
      */
     public static List<Integer> topKFrequent3(int[] nums, int k) {
         // 使用字典，统计每个元素出现的次数，元素为键，元素出现的次数为值
