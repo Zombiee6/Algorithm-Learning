@@ -11,6 +11,7 @@ import static leetcode.P122.maxProfit_k_inf;
 public class P188 {
     /**
      * 动态规划，适用于121(买入一次)、122(无限次)、123(两次)、188(k次)、309(冷却1天)、714(手续费)
+     * https://github.com/labuladong/fucking-algorithm/blob/master/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/%E5%9B%A2%E7%81%AD%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98.md
      * <p>
      * 时间复杂度 : O(N^2)
      * 空间复杂度 : O(N^2)
